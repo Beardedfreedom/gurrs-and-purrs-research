@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurrs & Purrs | Strategic SEO, Social Media & Brand Portal</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+    
+    :root {
+      --gp-cream: #FAF7F2;
+      --gp-cream-dark: #F3ECE2;
+      --gp-sand: #EFE7DA;
+      --gp-terracotta: #C85A32;
+      --gp-terracotta-dark: #A94420;
+      --gp-terracotta-light: #F7EAE4;
+      --gp-forest: #2A5242;
+      --gp-forest-light: #3D6B58;
+      --gp-forest-soft: #E8F0EC;
+      --gp-espresso: #2A2521;
+      --gp-muted: #6B635B;
+      --gp-gold: #D4973B;
+      --gp-gold-soft: #FCF4E8;
+      --gp-card: #FFFFFF;
+      --gp-border: #E6DCD1;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--gp-cream);
+      color: var(--gp-espresso);
+    }
+
+    .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .tab-btn.active {
+      background-color: var(--gp-forest);
+      color: #FFFFFF;
+      border-color: var(--gp-forest);
+    }
+
+    .tab-btn {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .tab-btn:hover:not(.active) {
+      background-color: var(--gp-sand);
+      color: var(--gp-forest);
+    }
+
+    .card-shadow {
+      box-shadow: 0 4px 20px -2px rgba(42, 37, 33, 0.06), 0 2px 6px -1px rgba(42, 37, 33, 0.04);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--gp-cream-dark);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D1C4B5;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--gp-terracotta);
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased selection:bg-[#F7EAE4] selection:text-[#C85A32]">
+
+  <!-- Top Announcement Bar -->
+  <aside aria-label="Announcement" class="bg-[#2A5242] text-[#FAF7F2] text-xs py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-[#D4973B] animate-pulse"></span>
+    Celebrating 20 Years of Trusted Pet Care in DeLand (2006–2026) | Private Strategic Intelligence Dossier for Rhonda & Kelly Hobbs
+  </aside>
+
+  <!-- Hero & Navigation Header -->
+  <header class="bg-white border-b border-[#E6DCD1] sticky top-0 z-40 card-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-[#C85A32] flex items-center justify-center text-white shadow-md">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.5 10.5C3.67 10.5 3 11.17 3 12s.67 1.5 1.5 1.5S6 12.83 6 12s-.67-1.5-1.5-1.5zm15 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zM8.5 6C7.67 6 7 6.67 7 7.5S7.67 9 8.5 9 10 8.33 10 7.5 9.33 6 8.5 6zm7 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-3.5 7c-2.33 0-4.32 1.45-5.12 3.5h10.24c-.8-2.05-2.79-3.5-5.12-3.5z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-xl md:text-2xl font-bold font-serif-title tracking-tight text-[#2A2521]">Gurrs & Purrs</h1>
+              <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#E8F0EC] text-[#2A5242] border border-[#2A5242]/20">Executive Portal</span>
+            </div>
+            <p class="text-xs text-[#6B635B]">Competitor SEO Teardown, Social Gaps & 30-Day Growth Engine for Rhonda Hobbs</p>
+          </div>
+        </div>
+
+        <!-- Quick Actions & Key Stats -->
+        <div class="flex items-center gap-3 self-start md:self-auto overflow-x-auto pb-1 md:pb-0">
+          <button onclick="switchTab('tab-sintra')" class="bg-[#FCF4E8] hover:bg-[#F3ECE2] border border-[#D4973B]/40 px-3 py-1.5 rounded-xl text-left transition-colors flex items-center gap-2">
+            <span class="text-lg">🤖</span>
+            <div>
+              <span class="block text-[10px] text-[#6B635B] uppercase font-bold tracking-wider">AI Co-Pilot</span>
+              <span class="text-xs font-bold text-[#D4973B]">Meet Sintra.ai →</span>
+            </div>
+          </button>
+          <div class="bg-[#FAF7F2] border border-[#E6DCD1] px-3 py-1.5 rounded-xl text-center">
+            <span class="block text-[11px] text-[#6B635B] font-medium">DeLand Locations</span>
+            <span class="text-sm font-bold text-[#2A5242]">116 N & 319 S</span>
+          </div>
+          <div class="bg-[#FAF7F2] border border-[#E6DCD1] px-3 py-1.5 rounded-xl text-center">
+            <span class="block text-[11px] text-[#6B635B] font-medium">Grooming Standard</span>
+            <span class="text-sm font-bold text-[#2A2521]">100% Cage-Free</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="flex space-x-2 overflow-x-auto py-2.5 border-t border-[#E6DCD1]/60 no-scrollbar" id="tabNav">
+        <button onclick="switchTab('tab-digest')" id="btn-tab-digest" class="tab-btn active px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-transparent whitespace-nowrap">
+          📖 Rhonda's 2-Min Digest
+        </button>
+        <button onclick="switchTab('tab-gaps')" id="btn-tab-gaps" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          🔍 Our 6 Critical Gaps
+        </button>
+        <button onclick="switchTab('tab-seo')" id="btn-tab-seo" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          🌐 Competitor SEO Audit
+        </button>
+        <button onclick="switchTab('tab-competitor-posts')" id="btn-tab-competitor-posts" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          🏆 Competitor Top 10 Posts & Captions
+        </button>
+        <button onclick="switchTab('tab-playbook')" id="btn-tab-playbook" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          🎬 Gurrs & Purrs Scripts
+        </button>
+        <button onclick="switchTab('tab-calendar')" id="btn-tab-calendar" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          📅 30-Day Shoot Calendar
+        </button>
+        <button onclick="switchTab('tab-sintra')" id="btn-tab-sintra" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          🤖 Meet Sintra.ai Co-Pilot
+        </button>
+        <button onclick="switchTab('tab-tech')" id="btn-tab-tech" class="tab-btn px-4 py-2 text-xs md:text-sm font-semibold rounded-lg border border-[#E6DCD1] text-[#2A2521] whitespace-nowrap">
+          ⚙️ Clover + Shopify Stack
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- ========================================== -->
+    <!-- TAB 1: RHONDA'S 2-MINUTE DIGEST            -->
+    <!-- ========================================== -->
+    <section id="tab-digest" class="space-y-8 block">
+      
+      <!-- Welcome Letter / Executive Context -->
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-[#F7EAE4]/60 pointer-events-none"></div>
+        <div class="max-w-3xl relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-semibold mb-4">
+            <span>🌿</span> Note for Rhonda & Kelly
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold font-serif-title text-[#2A2521] mb-3">
+            Rhonda, you already own what big-box retailers and franchises can never buy: 20 years of authentic trust in DeLand.
+          </h2>
+          <p class="text-sm md:text-base text-[#6B635B] leading-relaxed mb-4">
+            We audited every pet business in West Volusia County—from PetSmart DeLand and Petco Orange City to Practical Puppy and Woof Gang Bakery. 
+            Here is the core truth: <strong>Corporate chains have huge ad budgets but zero soul. Local competitors are running unencrypted websites from 2005.</strong> 
+            The only reason competitors capture search clicks or foot traffic is because their technical tags are optimized and their video content reaches modern pet parents on their phones.
+          </p>
+          <div class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs md:text-sm text-[#2A2521] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div>
+              <span class="font-bold text-[#C85A32]">Your 3 Immediate Unfair Advantages:</span>
+              <p class="text-[#6B635B] text-xs mt-0.5">1. Crate-Free 1-on-1 Grooming | 2. Thera-Clean Microbubble Baths | 3. The Chewy Immunity Moat (Fromm, Carna4, Answers)</p>
+            </div>
+            <button onclick="switchTab('tab-gaps')" class="px-4 py-2 bg-[#2A5242] hover:bg-[#3D6B58] text-white font-medium rounded-xl text-xs transition-colors whitespace-nowrap">
+              Review Our 6 Gaps →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- The 3 Pillars of Superiority Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-lg mb-4">
+              🛡️
+            </div>
+            <h3 class="font-serif-title text-lg font-bold text-[#2A2521] mb-2">The "Chewy Immunity" Moat</h3>
+            <p class="text-xs text-[#6B635B] leading-relaxed mb-4">
+              Brands like <strong>Fromm Family, Carna4, Solutions, and The Bones & Co.</strong> legally prohibit sales on Chewy and Amazon. Big-box stores can’t touch them. With Astro Loyalty's <em>Buy 12, Get 1 FREE</em> (an 8.33% lifetime value), your customers save more with you than Chewy autoship.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 text-xs font-semibold text-[#C85A32] flex items-center justify-between">
+            <span>Chewy Autoship: 5%</span>
+            <span class="bg-[#FAF7F2] px-2 py-1 rounded-md border border-[#E6DCD1]">Gurrs & Purrs: 8.33% + Delivery</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-[#E8F0EC] text-[#2A5242] flex items-center justify-center font-bold text-lg mb-4">
+              🛁
+            </div>
+            <h3 class="font-serif-title text-lg font-bold text-[#2A2521] mb-2">Private Cage-Free Care</h3>
+            <p class="text-xs text-[#6B635B] leading-relaxed mb-4">
+              PetSmart and Petco run industrial assembly lines where dogs tremble in metal wire crates for 3 to 4 hours under loud heated cage dryers. At 319 S Woodland Blvd, you provide <strong>1-on-1 calming suites with zero cages and zero cage dryers</strong>. Pet parents will gladly pay \$75–\$95+ for peace of mind once they see it.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 text-xs font-semibold text-[#2A5242] flex items-center justify-between">
+            <span>Corporate: Crate Banks</span>
+            <span class="bg-[#FAF7F2] px-2 py-1 rounded-md border border-[#E6DCD1]">Gurrs & Purrs: 100% Private</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-[#FCF4E8] text-[#D4973B] flex items-center justify-center font-bold text-lg mb-4">
+              ✨
+            </div>
+            <h3 class="font-serif-title text-lg font-bold text-[#2A2521] mb-2">Thera-Clean Clinical Power</h3>
+            <p class="text-xs text-[#6B635B] leading-relaxed mb-4">
+              No competitor in Volusia County has Thera-Clean microbubble hydrotherapy. Microbubbles penetrate deep into hair follicles to lift sebum, yeast, and allergens without harsh chemicals. It is the holy grail for Florida's humid skin allergies and makes mesmerizing video content.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 text-xs font-semibold text-[#D4973B] flex items-center justify-between">
+            <span>Rivals: Harsh Perfumed Soap</span>
+            <span class="bg-[#FAF7F2] px-2 py-1 rounded-md border border-[#E6DCD1]">Gurrs & Purrs: Deep Cellular Clean</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Executive Takeaways Banner -->
+      <div class="bg-[#FAF7F2] border-2 border-dashed border-[#E6DCD1] rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-[#C85A32] text-white flex items-center justify-center text-xl flex-shrink-0">
+            🎯
+          </div>
+          <div>
+            <h4 class="font-serif-title text-base font-bold text-[#2A2521]">Want to see what your competitors are actually posting?</h4>
+            <p class="text-xs text-[#6B635B]">We pulled the top 10 viral pet store and grooming posts with their exact captions and hashtags so you can benchmark your strategy.</p>
+          </div>
+        </div>
+        <button onclick="switchTab('tab-competitor-posts')" class="w-full md:w-auto px-6 py-3 bg-[#C85A32] hover:bg-[#A94420] text-white font-semibold text-xs rounded-xl shadow transition-colors flex items-center justify-center gap-2">
+          <span>See Competitor Top 10 Posts</span>
+          <span>→</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 2: OUR 6 CRITICAL GAPS & HOW TO FIX   -->
+    <!-- ========================================== -->
+    <section id="tab-gaps" class="space-y-6 hidden">
+      <div class="border-b border-[#E6DCD1] pb-4">
+        <h2 class="text-2xl font-bold font-serif-title text-[#2A2521]">Where We Stand vs. Where We Win</h2>
+        <p class="text-xs text-[#6B635B] mt-1">A transparent diagnostic of Gurrs & Purrs' 6 critical gaps and the exact high-converting fix for each.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Gap 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">01</span>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#C85A32]">Content Format</span>
+                <h3 class="text-base font-bold text-[#2A2521] mt-0.5">The "Static Photo Trap" vs. 15-Second Vertical Video</h3>
+                <p class="text-xs text-[#6B635B] mt-1 leading-relaxed">
+                  <strong>The Current Reality:</strong> 85%+ of Gurrs & Purrs posts are static pictures of dogs standing on grooming tables or photos of paper flyers. On Facebook and Instagram, static photos only reach ~5% of your existing followers.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 bg-[#E8F0EC] p-4 rounded-xl border border-[#2A5242]/20 text-xs">
+              <span class="font-bold text-[#2A5242] flex items-center gap-1.5 mb-1">
+                <span>⚡ The Market-Leading Fix</span>
+              </span>
+              <p class="text-[#2A2521] leading-relaxed">
+                Flip to an <strong>80/20 video-first model</strong>. Film 15–25 second vertical Reels (ASMR water baths, blowing out a Husky coat, snapping fresh dog cookies with bakery tongs). Reels get <strong>8x to 12x organic reach</strong> and introduce you to thousands of non-followers across Volusia County for free.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gap 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">02</span>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#C85A32]">Platform Channels</span>
+                <h3 class="text-base font-bold text-[#2A2521] mt-0.5">The "Facebook Island" vs. Next-Gen Pet Discovery</h3>
+                <p class="text-xs text-[#6B635B] mt-1 leading-relaxed">
+                  <strong>The Current Reality:</strong> Gurrs & Purrs lives almost exclusively on Facebook. Instagram is dormant and TikTok is 0%.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 bg-[#E8F0EC] p-4 rounded-xl border border-[#2A5242]/20 text-xs">
+              <span class="font-bold text-[#2A5242] flex items-center gap-1.5 mb-1">
+                <span>⚡ The Market-Leading Fix</span>
+              </span>
+              <p class="text-[#2A2521] leading-relaxed">
+                Over 65% of new pet adoptions and <strong>100% of Stetson University pet-dorm students</strong> discover groomers and treats on Instagram and TikTok. We syndicate every video created across Instagram Reels, TikTok, and Facebook Reels simultaneously in one click.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gap 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">03</span>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#C85A32]">Founder Authority</span>
+                <h3 class="text-base font-bold text-[#2A2521] mt-0.5">The "Hidden Founder" vs. Rhonda's Authority Series</h3>
+                <p class="text-xs text-[#6B635B] mt-1 leading-relaxed">
+                  <strong>The Current Reality:</strong> Rhonda has 20 years of nutritional expertise that saves allergic dogs from painful vet cycles—but those consultations happen privately behind the counter.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 bg-[#E8F0EC] p-4 rounded-xl border border-[#2A5242]/20 text-xs">
+              <span class="font-bold text-[#2A5242] flex items-center gap-1.5 mb-1">
+                <span>⚡ The Market-Leading Fix</span>
+              </span>
+              <p class="text-[#2A2521] leading-relaxed">
+                Launch a weekly 45-second phone video series: <em>"Ask Rhonda: 20 Years of Pet Nutrition in DeLand"</em>. When pet owners see Rhonda holding a bleached rawhide explaining why it blocks dog intestines, they instantly recognize her as West Volusia's premier pet authority.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gap 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">04</span>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#C85A32]">Visual Proof</span>
+                <h3 class="text-base font-bold text-[#2A2521] mt-0.5">Thera-Clean & Cage-Free: Described vs. Demonstrated</h3>
+                <p class="text-xs text-[#6B635B] mt-1 leading-relaxed">
+                  <strong>The Current Reality:</strong> You write about Thera-Clean and crate-free grooming in text captions, but prospective clients have never seen the microbubbles or the peaceful salon in action.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 bg-[#E8F0EC] p-4 rounded-xl border border-[#2A5242]/20 text-xs">
+              <span class="font-bold text-[#2A5242] flex items-center gap-1.5 mb-1">
+                <span>⚡ The Market-Leading Fix</span>
+              </span>
+              <p class="text-[#2A2521] leading-relaxed">
+                Film 15-second time-lapses of the milky microbubbles lifting dark trapped oils from an itchy Frenchie's coat, and show a Golden Doodle peacefully snoozing on an orthopedic rug. <strong>Seeing is believing; demonstrating justifies the \$85+ ticket instantly.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gap 5 -->
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">05</span>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#C85A32]">Lead Capture</span>
+                <h3 class="text-base font-bold text-[#2A2521] mt-0.5">Dead-End Captions vs. 24/7 Automated Direct Messages</h3>
+                <p class="text-xs text-[#6B635B] mt-1 leading-relaxed">
+                  <strong>The Current Reality:</strong> Captions end with *"Give us a call at the shop!"* Most dog parents scroll Instagram at 10:00 PM when the shop is closed. They don't call; they just scroll past.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 bg-[#E8F0EC] p-4 rounded-xl border border-[#2A5242]/20 text-xs">
+              <span class="font-bold text-[#2A5242] flex items-center gap-1.5 mb-1">
+                <span>⚡ The Market-Leading Fix</span>
+              </span>
+              <p class="text-[#2A2521] leading-relaxed">
+                Deploy comment-to-DM automation (ManyChat): <em>"Comment **GROOM** and we'll DM you our private VIP booking calendar."</em> or <em>"Comment **ALLERGY** for Rhonda's Free Gut-Health Cheatsheet."</em> This captures leads, emails, and bookings automatically 24/7 while Rhonda sleeps.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gap 6 -->
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">06</span>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#C85A32]">E-Commerce Flow</span>
+                <h3 class="text-base font-bold text-[#2A2521] mt-0.5">Social Disconnect vs. Instant Doorstep Ordering</h3>
+                <p class="text-xs text-[#6B635B] mt-1 leading-relaxed">
+                  <strong>The Current Reality:</strong> When you share an amazing Fromm food or goat milk topper, customers cannot click to buy it for doorstep delivery because there is currently no live e-commerce site connected to inventory.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/2 bg-[#E8F0EC] p-4 rounded-xl border border-[#2A5242]/20 text-xs">
+              <span class="font-bold text-[#2A5242] flex items-center gap-1.5 mb-1">
+                <span>⚡ The Market-Leading Fix</span>
+              </span>
+              <p class="text-[#2A2521] leading-relaxed">
+                Connect your social feed to our proposed <strong>Shopify + Clover POS + Astro Loyalty live sync</strong>. Every post features product tags where a customer can order a 26lb bag in 2 taps on their phone and get Free 10-Mile DeLand Delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 3: COMPETITOR SEO & LOCAL AUDIT        -->
+    <!-- ========================================== -->
+    <section id="tab-seo" class="space-y-6 hidden">
+      <div class="border-b border-[#E6DCD1] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h2 class="text-2xl font-bold font-serif-title text-[#2A2521]">Competitor SEO Teardown & Vulnerability Analysis</h2>
+          <p class="text-xs text-[#6B635B] mt-1">Detailed evaluation of on-page metadata, technical architecture, and local Google Map Pack rankings.</p>
+        </div>
+        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-[#FAF7F2] border border-[#E6DCD1] text-[#6B635B] self-start sm:self-auto">
+          6 Competitors Audited
+        </span>
+      </div>
+
+      <!-- Competitor Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1: PetSmart -->
+        <div class="bg-white rounded-2xl p-5 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-[#C85A32]">Big-Box Giant</span>
+              <span class="text-[11px] font-semibold bg-[#E8F0EC] text-[#2A5242] px-2 py-0.5 rounded">DA: 88</span>
+            </div>
+            <h3 class="text-lg font-bold text-[#2A2521] mb-1">PetSmart DeLand</h3>
+            <p class="text-xs text-[#6B635B] mb-3">2661 S Woodland Blvd, DeLand</p>
+            
+            <div class="space-y-2 text-xs border-t border-[#E6DCD1]/60 pt-3">
+              <div>
+                <span class="font-semibold text-[#2A2521]">Title Tag:</span>
+                <p class="text-[#6B635B] italic font-mono text-[11px] bg-[#FAF7F2] p-1.5 rounded mt-0.5">PetSmart Deland Pet Store in Deland, Florida | Store #3163</p>
+              </div>
+              <div>
+                <span class="font-semibold text-[#2A2521]">Their Fatal Flaw:</span>
+                <p class="text-[#6B635B]">Rigid corporate template. Zero coverage of raw feeding, goat milk, holistic allergies, or cage-free care.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#E6DCD1]/60 bg-[#F7EAE4]/60 p-2.5 rounded-xl text-xs text-[#A94420] font-medium">
+            🎯 <strong>How Gurrs & Purrs Wins:</strong> Dominate all long-tail searches for "holistic pet food DeLand" and "stress-free dog grooming".
+          </div>
+        </div>
+
+        <!-- Card 2: Petco -->
+        <div class="bg-white rounded-2xl p-5 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-[#C85A32]">National Chain</span>
+              <span class="text-[11px] font-semibold bg-[#E8F0EC] text-[#2A5242] px-2 py-0.5 rounded">DA: 86</span>
+            </div>
+            <h3 class="text-lg font-bold text-[#2A2521] mb-1">Petco Orange City</h3>
+            <p class="text-xs text-[#6B635B] mb-3">921 Harley Strickland Blvd, Orange City</p>
+            
+            <div class="space-y-2 text-xs border-t border-[#E6DCD1]/60 pt-3">
+              <div>
+                <span class="font-semibold text-[#2A2521]">Title Tag:</span>
+                <p class="text-[#6B635B] italic font-mono text-[11px] bg-[#FAF7F2] p-1.5 rounded mt-0.5">Pet Supply Store Near You | Petco Pet Store in Orange City, FL</p>
+              </div>
+              <div>
+                <span class="font-semibold text-[#2A2521]">Their Fatal Flaw:</span>
+                <p class="text-[#6B635B]">Focuses heavily on Vetco veterinary clinics. No personalized boutique feel; high employee turnover.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#E6DCD1]/60 bg-[#F7EAE4]/60 p-2.5 rounded-xl text-xs text-[#A94420] font-medium">
+            🎯 <strong>How Gurrs & Purrs Wins:</strong> Highlight 20 years of consistent, familiar faces and customized dietary guidance.
+          </div>
+        </div>
+
+        <!-- Card 3: Practical Puppy -->
+        <div class="bg-white rounded-2xl p-5 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-[#C85A32]">Direct Local Rival</span>
+              <span class="text-[11px] font-semibold bg-[#F7EAE4] text-[#C85A32] px-2 py-0.5 rounded">DA: 11</span>
+            </div>
+            <h3 class="text-lg font-bold text-[#2A2521] mb-1">Practical Puppy</h3>
+            <p class="text-xs text-[#6B635B] mb-3">718 E New York Ave, DeLand</p>
+            
+            <div class="space-y-2 text-xs border-t border-[#E6DCD1]/60 pt-3">
+              <div>
+                <span class="font-semibold text-[#2A2521]">Technical Health:</span>
+                <p class="text-[#C85A32] font-semibold text-[11px] bg-[#F7EAE4] p-1.5 rounded mt-0.5">⚠️ Insecure HTTP, Non-Responsive, Zero Schema</p>
+              </div>
+              <div>
+                <span class="font-semibold text-[#2A2521]">Their Fatal Flaw:</span>
+                <p class="text-[#6B635B]">Unsecured 2005-era website with severe keyword stuffing. No online booking, no mobile layout, no retail food catalog.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#E6DCD1]/60 bg-[#F7EAE4]/60 p-2.5 rounded-xl text-xs text-[#A94420] font-medium">
+            🎯 <strong>How Gurrs & Purrs Wins:</strong> A modern, secure, mobile-first website with rich JSON-LD schema will easily outrank them.
+          </div>
+        </div>
+
+        <!-- Card 4: Bark & Mane -->
+        <div class="bg-white rounded-2xl p-5 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-[#C85A32]">Mobile Groomer</span>
+              <span class="text-[11px] font-semibold bg-[#E8F0EC] text-[#2A5242] px-2 py-0.5 rounded">DA: 44</span>
+            </div>
+            <h3 class="text-lg font-bold text-[#2A2521] mb-1">Bark & Mane (Aussie Pet)</h3>
+            <p class="text-xs text-[#6B635B] mb-3">Mobile Doorstep Service (Volusia County)</p>
+            
+            <div class="space-y-2 text-xs border-t border-[#E6DCD1]/60 pt-3">
+              <div>
+                <span class="font-semibold text-[#2A2521]">Title Tag:</span>
+                <p class="text-[#6B635B] italic font-mono text-[11px] bg-[#FAF7F2] p-1.5 rounded mt-0.5">Mobile Pet Grooming at Your Doorstep | Bark & Mane</p>
+              </div>
+              <div>
+                <span class="font-semibold text-[#2A2521]">Their Fatal Flaw:</span>
+                <p class="text-[#6B635B]">High mobile van rates (\$120–\$180+). No storefront community feel and zero retail nutrition cross-sell.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#E6DCD1]/60 bg-[#F7EAE4]/60 p-2.5 rounded-xl text-xs text-[#A94420] font-medium">
+            🎯 <strong>How Gurrs & Purrs Wins:</strong> Equal 1-on-1 private care in a relaxing salon suite at half the mobile surcharge (\$65–\$95).
+          </div>
+        </div>
+
+        <!-- Card 5: Woof Gang Bakery -->
+        <div class="bg-white rounded-2xl p-5 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-[#C85A32]">Boutique Franchise</span>
+              <span class="text-[11px] font-semibold bg-[#E8F0EC] text-[#2A5242] px-2 py-0.5 rounded">DA: 54</span>
+            </div>
+            <h3 class="text-lg font-bold text-[#2A2521] mb-1">Woof Gang Bakery</h3>
+            <p class="text-xs text-[#6B635B] mb-3">Lake Mary & Winter Park, FL</p>
+            
+            <div class="space-y-2 text-xs border-t border-[#E6DCD1]/60 pt-3">
+              <div>
+                <span class="font-semibold text-[#2A2521]">Schema Model:</span>
+                <p class="text-[#2A5242] font-semibold text-[11px] bg-[#E8F0EC] p-1.5 rounded mt-0.5">Triple-Entity: PetStore + Bakery + PetGrooming</p>
+              </div>
+              <div>
+                <span class="font-semibold text-[#2A2521]">Their Fatal Flaw:</span>
+                <p class="text-[#6B635B]">High focus on novelty treats and cookies; weak on species-appropriate raw feeding and therapeutic skin solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#E6DCD1]/60 bg-[#F7EAE4]/60 p-2.5 rounded-xl text-xs text-[#A94420] font-medium">
+            🎯 <strong>How Gurrs & Purrs Wins:</strong> Replicate their triple schema for "dog bakery DeLand" while beating them on clinical nutrition.
+          </div>
+        </div>
+
+        <!-- Card 6: Pet Supermarket -->
+        <div class="bg-white rounded-2xl p-5 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-[#C85A32]">Regional Chain</span>
+              <span class="text-[11px] font-semibold bg-[#E8F0EC] text-[#2A5242] px-2 py-0.5 rounded">DA: 62</span>
+            </div>
+            <h3 class="text-lg font-bold text-[#2A2521] mb-1">Pet Supermarket</h3>
+            <p class="text-xs text-[#6B635B] mb-3">2631 Enterprise Rd, Orange City</p>
+            
+            <div class="space-y-2 text-xs border-t border-[#E6DCD1]/60 pt-3">
+              <div>
+                <span class="font-semibold text-[#2A2521]">Target Keywords:</span>
+                <p class="text-[#6B635B] italic font-mono text-[11px] bg-[#FAF7F2] p-1.5 rounded mt-0.5">"dog wash orange city", "pet food sale"</p>
+              </div>
+              <div>
+                <span class="font-semibold text-[#2A2521]">Their Fatal Flaw:</span>
+                <p class="text-[#6B635B]">Self-serve dog wash focus. No educational authority or customized diet formulation consultations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-[#E6DCD1]/60 bg-[#F7EAE4]/60 p-2.5 rounded-xl text-xs text-[#A94420] font-medium">
+            🎯 <strong>How Gurrs & Purrs Wins:</strong> Offer luxury full-service Thera-Clean hydrotherapy instead of DIY dog washing.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 4: COMPETITOR TOP 10 POSTS & CAPTIONS  -->
+    <!-- ========================================== -->
+    <section id="tab-competitor-posts" class="space-y-6 hidden">
+      <div class="border-b border-[#E6DCD1] pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FCF4E8] text-[#D4973B] text-xs font-bold mb-2">
+            <span>🏆</span> Direct Viral Intelligence
+          </div>
+          <h2 class="text-2xl font-bold font-serif-title text-[#2A2521]">Competitor Top 10 Best-Performing Posts</h2>
+          <p class="text-xs text-[#6B635B] mt-1">Review the exact hooks, verbatim captions, and hashtag stacks powering millions of views across rival accounts.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-[#6B635B] bg-[#FAF7F2] border border-[#E6DCD1] px-3 py-1.5 rounded-xl font-medium">
+            Click "Copy Caption" to adapt for Gurrs & Purrs
+          </span>
+        </div>
+      </div>
+
+      <!-- 10 Competitor Cards Grid -->
+      <div class="space-y-6">
+
+        <!-- Post 1: Woof Gang Bakery (Creative Transformation) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#1</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Woof Gang Bakery Stylist · Instagram Reels & TikTok</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">The "Safari Giraffe" Creative Grooming Transformation</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">29.2M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">3.7M Likes · 34K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <!-- Left: Exact Verbatim Caption & Hashtags -->
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-1', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-1" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "When mom said 'surprise me'… 🦒✨ Did we go too far or is this the cutest safari pup in Florida? Don't worry, 100% pet-safe, non-toxic, vegan color that washes right out! Book your pup's creative grooming session at your local Woof Gang Bakery salon. Link in bio!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-1', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-1" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #woofgangbakery #doggrooming #creativegrooming #doggroomer #poodlelove #safari #dogtransformation #floridadogs #orlandodogs #dogsoftiktok #petcare #glowup
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Why It Won & Gurrs & Purrs Replication -->
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  The visual shock of transforming a regular dog into a wild animal triggers immediate curiosity and massive comment debate over pet dye safety (which the algorithm heavily rewards).
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Coordinate with a local Stetson University pet parent to do temporary pet-safe <strong>green-and-white tail tipping</strong> for Hatter Homecoming. Tag <em>#StetsonDogs #DeLandFL #DowntownDeLand</em>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 2: Girl With The Dogs (Extreme Transformation) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#2</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Girl With The Dogs (Vanessa) · YouTube Shorts & TikTok</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">Mat-to-Model Extreme Transformation & Restorative Bath</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">38.4M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">4.3M Likes · 18.2K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-2', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-2" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "Today I had the absolute pleasure of grooming Stella. She was a little grumpy about her bath, but underneath all that matted fur was a sweet teddy bear. We used a calming blueberry facial and high-velocity deshedding so she didn't have to be shaved bald."
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-2', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-2" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #girlwiththedogs #doggrooming #asmr #dogbath #groomer #satisfying #matteddog #dogtransformation #rescuepup #dogtok #pethair
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  High-stakes emotional hook ("was told she had to be shaved bald") paired with crisp acoustic water sounds and visual relief when the dog turns out fluffy and happy.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Film at 319 S Woodland Blvd. Showcase how your <strong>1-on-1 private crate-free suite</strong> allows patience and restorative conditioning instead of rushed big-box shaving.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 3: The BK Pets (Kibble Bowl Glow-Up) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#3</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">The BK Pets (Bryce & Kenzie) · TikTok & Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">"Stop Feeding Just Dry Brown Pellets" (Kibble Glow-Up Bowl)</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">18.7M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">1.9M Likes · 88K Shares</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-3', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-3" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "Stop feeding your dog just dry brown crunchy pellets! 🥣 Would you want to eat dry cereal for breakfast, lunch, and dinner every single day? Here's an easy 3-step bowl boost to hydrate your dog's kibble, fight inflammation, and keep their kidneys healthy. Your dog will thank you!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-3', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-3" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #thebkpets #dogfood #kibbletoppers #rawfeeding #doghealth #dognutrition #freshdogfood #healthydog #rawfeddog #dogmomlife #kibblefed
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Every dog parent relates to feeling guilty about boring dry food. The visual satisfies the "oddly satisfying" cooking trend while driving high save and share rates.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Set up a bowl in the 116 N Woodland store. Pour <strong>Answers raw goat milk</strong> over <strong>Fromm kibble</strong> and top with <strong>Steve's Real Food nuggets</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 4: Woof Gang Bakery (Treat Case ASMR) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#4</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Woof Gang Bakery / Two Bostons · Instagram Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">Dog Bakery Display Case Restock & Tongs ASMR</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">12.4M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">1.4M Likes · 14K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-4', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-4" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "Saturday morning bakery restock is our love language 🥐🐾 Freshly dipped peanut butter cannolis, grain-free bacon donuts, and iced birthday pupcakes. Which treat would your bestie grab first? Available in-store all weekend!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-4', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-4" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #dogbakery #woofgangbakery #twobostons #dogtreats #dogcake #asmrsounds #satisfyingvideo #treatcase #dogmom #spoileddog #puppylove #shopsmall
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Zero talking; pure acoustic ASMR satisfaction. The crisp click of the tongs and snapping biscuits tap directly into TikTok's sensory algorithm.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Film your Friday treat case restock at 116 N Woodland Blvd. Capture close-up sounds of the tongs and fresh peanut butter pupcakes ahead of Saturday farmers market foot traffic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 5: Rodney Habib / Planet Paws (Authority) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#5</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Rodney Habib / Planet Paws · Facebook Video & Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">"3 Pet Products I Will NEVER Buy" (Bleached Rawhide & Dyes)</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">15.1M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">1.1M Likes · 850K Shares</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-5', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-5" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "3 toxic pet products I will NEVER give my dog, and what you should buy instead! 🛑 Look at the back of your treat bag right now. If you see bleached rawhide or artificial coloring like Red 40, throw it out. Save your dog's gut and save yourself thousands in vet bills."
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-5', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-5" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #planetpaws #rodneyhabib #dogfoodmyths #pethealth #rawhide #toxicdogfood #dognutrition #holisticpetcare #dogtreats #healthyfoodfordogs
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Protective fear + actionable relief. Pet owners want to protect their animals and immediately share this with family members to warn them.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Rhonda holds up bleached rawhide vs. a beef collagen stick in the store aisle. Leverage her <strong>20-year legacy in DeLand</strong> to build unshakeable customer trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 6: Fear-Free Salons (Cage-Free Contrast) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#6</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Fear-Free Boutique Salons · Instagram Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">"Why We Refuse Cages and Cage Dryers" (The Quiet Contrast)</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">8.9M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">940K Likes · 19K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-6', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-6" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "We will never understand why some salons lock anxious dogs inside metal cage dryers for 3 hours. 💔 In our salon, it's 1-on-1 private care only. No cages. No cage dryers. Hand-dried with love and patience. Your dog deserves peace."
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-6', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-6" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #cagefreegrooming #fearfreepets #doggrooming #stressfreedoggrooming #pethospital #dogcare #gentlegrooming #dogmomlife #pamperedpooch
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Highlights an industry dirty secret that pet parents hate. Justifies a premium \$85+ grooming fee by providing emotional relief and ethical reassurance.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Pan smoothly across 319 S Woodland Blvd. Show a quiet, private room with aromatherapy and a dog resting happily on an orthopedic mat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 7: Two Bostons (Birthday Toy Spree) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#7</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Two Bostons Pet Boutique · TikTok & Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">Dog Birthday $50 In-Store Shopping Spree</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">22.5M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">2.8M Likes · 11K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-7', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-7" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "It's Buster's 4th birthday and we gave him 60 seconds to pick ANY toy he wanted in our local shop! 🥳 Watch him march straight to the squeaky alligator and carry it all the way to checkout. Happy birthday buddy!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-7', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-7" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #twobostons #dogbirthday #shoppingwithdog #dogspree #dogtoys #shopsmall #birthdaypup #funnydog #dogsoftiktok #boutiquepetstore
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Pure joy and wholesome entertainment. Viewers root for the dog and immediately want to recreate the experience for their own pets on their birthdays.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Invite your regular customer's dog into 116 N Woodland Blvd with a mini birthday hat on. Give them a free pupcake and film them grabbing a toy!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 8: Independent Pet Heroes (Chewy Math) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#8</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Independent Pet Retail Network · Facebook Video</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">Chewy vs. Local Pet Store True Cost Breakdown</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">4.8M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">410K Likes · 320K Shares</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-8', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-8" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "Think Chewy is cheaper? Let's do the math on a 26 lb bag of pet food. 🧮 Chewy: 5% auto-ship discount. Our Local Shop: Buy 12 Get 1 FREE (that's an 8.33% savings!) + free doorstep local delivery + keeping your money in your hometown. Don't let big corporate apps fool you!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-8', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-8" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #shoplocal #shopsmall #independentpetstore #chewyvsus #astroloyalty #supportlocal #dogfoodsavings #petnutrition #buylocal
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Shatters the consumer assumption that big tech e-commerce is cheaper. People love supporting small businesses when they realize it actually saves them money.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Rhonda writes the math on a whiteboard in front of the Fromm shelf. Showcases **Astro Loyalty's 8.33% value** + free 10-mile delivery in DeLand!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 9: Deshedding Blowout Time-Lapse -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#9</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">Girl With The Dogs · TikTok & Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">The High-Velocity Undercoat "Fur Cloud" Time-Lapse</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">44.1M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">5.2M Likes · 28K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-9', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-9" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "I think I just groomed an entire second dog off this German Shepherd! 💨 Watch this undercoat blowout time-lapse. How many pounds of fur do you think we brushed out today? Leave your guess in the comments!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-9', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-9" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #girlwiththedogs #deshedding #germanshepherd #huskyfur #blowout #asmrgrooming #satisfying #furminator #doggroomer #doghair
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Oddly satisfying visual payoff. The "guessing game" in the caption triggers thousands of comments, propelling the video onto the global For You Page.
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Film in the 319 S Woodland bathing tub. Weigh the final pile of brushed hair on a postal scale at the end!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 10: BarkLife (Picky Eater Focus Group) -->
+        <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#E6DCD1]/60 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-10 h-10 rounded-2xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-sm">#10</span>
+              <div>
+                <span class="text-xs font-bold text-[#C85A32] uppercase tracking-wider">BarkLife Pet Boutique · TikTok & Reels</span>
+                <h3 class="text-lg font-bold text-[#2A2521]">The "Picky Eater" Canine Taste Test Focus Group</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 self-start lg:self-auto">
+              <span class="px-3 py-1 rounded-full bg-[#E8F0EC] text-[#2A5242] text-xs font-bold">7.2M Views</span>
+              <span class="px-3 py-1 rounded-full bg-[#FAF7F2] text-[#6B635B] text-xs font-semibold">780K Likes · 9.4K Comments</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="space-y-4">
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Caption:</span>
+                  <button onclick="copyText('caption-10', this)" class="text-xs text-[#C85A32] font-semibold hover:underline flex items-center gap-1">
+                    <span>📋 Copy Caption</span>
+                  </button>
+                </div>
+                <div id="caption-10" class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-xs text-[#2A2521] leading-relaxed italic">
+                  "You don't have a picky dog... your dog is just tired of eating dry brown cardboard! 🥩 Watch our rescue pup choose between grocery store kibble and a raw bone broth topper bowl. The reaction speaks for itself. Grab a free topper sample in-store this week!"
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-bold uppercase tracking-wider text-[#6B635B]">Exact Competitor Hashtag Stack:</span>
+                  <button onclick="copyText('tags-10', this)" class="text-xs text-[#2A5242] font-semibold hover:underline flex items-center gap-1">
+                    <span>🏷️ Copy Hashtags</span>
+                  </button>
+                </div>
+                <div id="tags-10" class="p-3 rounded-xl bg-white border border-[#E6DCD1] text-[11px] font-mono text-[#2A5242] leading-relaxed">
+                  #barklife #pickyeater #dogtaste #rawfoodfordogs #bonebrothfordogs #dognutrition #dogreaction #freshfoodfordogs #dogwellness
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold uppercase text-[#D4973B] tracking-wider block mb-1">Why It Won (The Viral Engine):</span>
+                <p class="text-xs text-[#6B635B] leading-relaxed">
+                  Validates the pet owner's frustration while offering a low-friction in-store invitation ("mention this video for a free raw topper sample").
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-[#E8F0EC] border border-[#2A5242]/20">
+                <span class="text-xs font-bold text-[#2A5242] block mb-1">🐾 How Gurrs & Purrs Replicates It in DeLand:</span>
+                <p class="text-xs text-[#2A2521] leading-relaxed">
+                  Offer free in-store sample packets of raw toppers at 116 N Woodland Blvd for any customer who mentions seeing the video.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 5: GURRS & PURRS SCRIPTS               -->
+    <!-- ========================================== -->
+    <section id="tab-playbook" class="space-y-6 hidden">
+      <div class="border-b border-[#E6DCD1] pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold font-serif-title text-[#2A2521]">Rhonda's Ready-to-Shoot Video Scripts</h2>
+          <p class="text-xs text-[#6B635B] mt-1">Word-for-word scripts adapted specifically for Gurrs & Purrs in DeLand, complete with in-store locations and ManyChat keywords.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-[#6B635B]">Filter:</span>
+          <button onclick="filterScripts('all')" class="script-filter px-3 py-1 bg-[#2A5242] text-white rounded-lg text-xs font-medium">All 10</button>
+          <button onclick="filterScripts('nutrition')" class="script-filter px-3 py-1 bg-white border border-[#E6DCD1] text-[#2A2521] rounded-lg text-xs font-medium">Nutrition</button>
+          <button onclick="filterScripts('grooming')" class="script-filter px-3 py-1 bg-white border border-[#E6DCD1] text-[#2A2521] rounded-lg text-xs font-medium">Grooming</button>
+          <button onclick="filterScripts('boutique')" class="script-filter px-3 py-1 bg-white border border-[#E6DCD1] text-[#2A2521] rounded-lg text-xs font-medium">Boutique & Fun</button>
+        </div>
+      </div>
+
+      <!-- Scripts Accordion / Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="scriptsGrid">
+
+        <!-- Script 1: Authority Post (Rhonda) -->
+        <div class="script-card nutrition bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-[#F7EAE4] text-[#C85A32]">Post #5: High Authority Debate</span>
+              <span class="text-xs font-semibold text-[#6B635B]">15M+ Views Benchmark</span>
+            </div>
+            <h3 class="text-lg font-serif-title font-bold text-[#2A2521] mb-2">"3 Things I'd NEVER Feed My Dog as a 20-Year Pet Store Owner"</h3>
+            <p class="text-xs text-[#6B635B] mb-4">
+              <strong>The Hook:</strong> Rhonda holds up a bleached white rawhide bone with a red "NO" symbol overlay: <em>"After 20 years in pet nutrition in DeLand, here are 3 things that will never cross my front door."</em>
+            </p>
+            <div class="bg-[#FAF7F2] p-4 rounded-xl border border-[#E6DCD1] text-xs space-y-2 mb-4">
+              <span class="font-bold text-[#2A2521] block">🎙️ Rhonda's 30-Second Script:</span>
+              <p class="italic text-[#6B635B]">
+                "Number 1: Bleached Rawhide. It's dipped in chemical bleach and swells in their stomachs. Swap it for all-natural beef collagen.<br>
+                Number 2: Treats with Artificial Red Dye 40. Look at your treat bag—if it's bright red, it's linked to severe skin itching. Swap for single-ingredient dehydrated duck liver.<br>
+                Number 3: Cheap grain-free kibbles packed with 40% pea and lentil fillers.<br>
+                Comment <strong>ALLERGY</strong> and I’ll DM you my free safe-swap cheatsheet!"
+              </p>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 flex items-center justify-between text-xs">
+            <span class="text-[#2A5242] font-semibold">📍 Downtown Treat Aisle</span>
+            <span class="bg-[#E8F0EC] text-[#2A5242] px-2 py-1 rounded font-medium">ManyChat: ALLERGY</span>
+          </div>
+        </div>
+
+        <!-- Script 2: Kibble Glow-Up -->
+        <div class="script-card nutrition bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-[#FCF4E8] text-[#D4973B]">Post #3: The Oddly Satisfying Bowl</span>
+              <span class="text-xs font-semibold text-[#6B635B]">18M+ Views Benchmark</span>
+            </div>
+            <h3 class="text-lg font-serif-title font-bold text-[#2A2521] mb-2">"Stop Feeding Dry Brown Pellets Alone" (Kibble Glow-Up)</h3>
+            <p class="text-xs text-[#6B635B] mb-4">
+              <strong>The Hook:</strong> Loud rattling sound of dry kibble hitting a metal bowl. On-screen text: <em>"If you ate dry cereal for 10 straight years, how would your gut feel?"</em>
+            </p>
+            <div class="bg-[#FAF7F2] p-4 rounded-xl border border-[#E6DCD1] text-xs space-y-2 mb-4">
+              <span class="font-bold text-[#2A2521] block">🎙️ Demonstration Arc:</span>
+              <p class="text-[#6B635B]">
+                1. Pour frothy Answers raw goat milk over Fromm kibble (soothing hydration).<br>
+                2. Crumble Steve’s Real Food freeze-dried raw patty on top.<br>
+                3. Pump wild Alaskan salmon oil & drop 4 fresh blueberries.<br>
+                4. End shot: A happy dog licking the bowl spotless in 15 seconds!
+              </p>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 flex items-center justify-between text-xs">
+            <span class="text-[#2A5242] font-semibold">📍 Nutrition Counter</span>
+            <span class="bg-[#E8F0EC] text-[#2A5242] px-2 py-1 rounded font-medium">ManyChat: BOWL</span>
+          </div>
+        </div>
+
+        <!-- Script 3: The Mat-to-Model Transformation -->
+        <div class="script-card grooming bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242]">Post #1: Master Transformation</span>
+              <span class="text-xs font-semibold text-[#6B635B]">38M+ Views Benchmark</span>
+            </div>
+            <h3 class="text-lg font-serif-title font-bold text-[#2A2521] mb-2">The "Mat-to-Model" Crate-Free Transformation</h3>
+            <p class="text-xs text-[#6B635B] mb-4">
+              <strong>The Hook:</strong> Scruffy, matted rescue Doodle looking anxious on arrival. Text: <em>"Her owner was told she’d have to be shaved bald. We refused to give up."</em>
+            </p>
+            <div class="bg-[#FAF7F2] p-4 rounded-xl border border-[#E6DCD1] text-xs space-y-2 mb-4">
+              <span class="font-bold text-[#2A2521] block">🎙️ Sensory ASMR Flow:</span>
+              <p class="text-[#6B635B]">
+                1. Crisp sound of water spraying and soothing lavender suds.<br>
+                2. High-velocity blow dryer rippling coat in satisfying slow-motion.<br>
+                3. Precision scissor shaping around ears and muzzle with lo-fi beats.<br>
+                4. Final turn: Fluffy showpiece pup wearing a handmade Gurrs & Purrs bandana!
+              </p>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 flex items-center justify-between text-xs">
+            <span class="text-[#2A5242] font-semibold">📍 319 S Woodland Salon</span>
+            <span class="bg-[#E8F0EC] text-[#2A5242] px-2 py-1 rounded font-medium">ManyChat: GROOM</span>
+          </div>
+        </div>
+
+        <!-- Script 4: The Silent Crate Contrast -->
+        <div class="script-card grooming bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242]">Post #6: Direct Differentiator</span>
+              <span class="text-xs font-semibold text-[#6B635B]">8.9M+ Views Benchmark</span>
+            </div>
+            <h3 class="text-lg font-serif-title font-bold text-[#2A2521] mb-2">"Why We REFUSE to Use Crates or Cage Dryers"</h3>
+            <p class="text-xs text-[#6B635B] mb-4">
+              <strong>The Hook:</strong> Harsh noisy audio cut to pure quiet. <em>"Did you know commercial salons often leave dogs inside metal cages with blaring heated blowers for 3 hours?"</em>
+            </p>
+            <div class="bg-[#FAF7F2] p-4 rounded-xl border border-[#E6DCD1] text-xs space-y-2 mb-4">
+              <span class="font-bold text-[#2A2521] block">🎙️ Visual Contrast:</span>
+              <p class="text-[#6B635B]">
+                Pan smoothly across your peaceful private room at 319 S Woodland. Show a calm dog resting its chin in your groomer's lap, having its paws gently dried with a warm fluffy towel. Text: <em>"Zero Cages. Zero Cage Dryers. One Dog at a Time."</em>
+              </p>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-[#E6DCD1]/60 flex items-center justify-between text-xs">
+            <span class="text-[#2A5242] font-semibold">📍 Private Grooming Suite</span>
+            <span class="bg-[#E8F0EC] text-[#2A5242] px-2 py-1 rounded font-medium">ManyChat: CALM</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 6: 30-DAY SHOOTING CALENDAR           -->
+    <!-- ========================================== -->
+    <section id="tab-calendar" class="space-y-6 hidden">
+      <div class="border-b border-[#E6DCD1] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold font-serif-title text-[#2A2521]">Rhonda's 30-Day Viral Content Checklist</h2>
+          <p class="text-xs text-[#6B635B] mt-1">Check off each shoot as you film. No complicated gear required: an iPhone + clip-on mic is all you need.</p>
+        </div>
+        <div class="text-xs font-semibold px-4 py-2 rounded-xl bg-[#E8F0EC] text-[#2A5242] border border-[#2A5242]/20 flex items-center gap-2">
+          <span>🎥 Equipment:</span> iPhone 13+ (4K/60fps) + \$20 Wireless Lapel Mic
+        </div>
+      </div>
+
+      <!-- Interactive Checklist Table -->
+      <div class="bg-white rounded-3xl border border-[#E6DCD1] card-shadow overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-[#FAF7F2] border-b border-[#E6DCD1] text-[#2A2521] uppercase tracking-wider text-[11px] font-bold">
+                <th class="p-4 w-12 text-center">Status</th>
+                <th class="p-4">Day</th>
+                <th class="p-4">Concept / Hook</th>
+                <th class="p-4">Location</th>
+                <th class="p-4">Key Action</th>
+                <th class="p-4">Automation Tag</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#E6DCD1]/60">
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 1</td>
+                <td class="p-4 font-semibold text-[#2A2521]">"3 Things I'd Never Feed My Dog as a 20-Year Owner"</td>
+                <td class="p-4 text-[#6B635B]">Downtown Treat Aisle</td>
+                <td class="p-4 text-[#6B635B]">Hold bleached rawhide; debunk red dye & fillers.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">ALLERGY</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 4</td>
+                <td class="p-4 font-semibold text-[#2A2521]">Matted Doodle Transformation without Shaving</td>
+                <td class="p-4 text-[#6B635B]">South Salon Suite</td>
+                <td class="p-4 text-[#6B635B]">Before/after bath & blowout with curved shears.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">GROOM</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 7</td>
+                <td class="p-4 font-semibold text-[#2A2521]">Chewy vs. Gurrs & Purrs Price Reality Check</td>
+                <td class="p-4 text-[#6B635B]">Food Aisle Whiteboard</td>
+                <td class="p-4 text-[#6B635B]">Whiteboard math showing 8.33% Astro savings.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">DELIVERY</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 10</td>
+                <td class="p-4 font-semibold text-[#2A2521]">Saturday Morning Bakery Display Case ASMR</td>
+                <td class="p-4 text-[#6B635B]">Downtown Pastry Table</td>
+                <td class="p-4 text-[#6B635B]">Tongs snapping peanut butter cannolis & cookies.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#FAF7F2] text-[#6B635B] font-mono">FOOT TRAFFIC</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 14</td>
+                <td class="p-4 font-semibold text-[#2A2521]">How to Turn Boring Kibble into a Superfood Bowl</td>
+                <td class="p-4 text-[#6B635B]">Nutrition Counter</td>
+                <td class="p-4 text-[#6B635B]">Pour goat milk, raw patties, and salmon oil.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">BOWL</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 18</td>
+                <td class="p-4 font-semibold text-[#2A2521]">Why We Refuse to Use Cage Dryers in Our Salon</td>
+                <td class="p-4 text-[#6B635B]">South Grooming Room</td>
+                <td class="p-4 text-[#6B635B]">Pan across calm pup snoozing on orthopedic rug.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">CALM</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 21</td>
+                <td class="p-4 font-semibold text-[#2A2521]">The Picky Eater Canine Focus Group Test</td>
+                <td class="p-4 text-[#6B635B]">Downtown Showroom</td>
+                <td class="p-4 text-[#6B635B]">Dog refuses plain dry food, devours raw bowl.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">SAMPLE</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 25</td>
+                <td class="p-4 font-semibold text-[#2A2521]">How Many Pounds of Hair Off This German Shepherd?</td>
+                <td class="p-4 text-[#6B635B]">South Bath Tub</td>
+                <td class="p-4 text-[#6B635B]">Blowout undercoat cloud; weigh hair on scale.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">DESHED</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 28</td>
+                <td class="p-4 font-semibold text-[#2A2521]">Buster’s 60-Second Birthday Shopping Spree</td>
+                <td class="p-4 text-[#6B635B]">Downtown Aisles</td>
+                <td class="p-4 text-[#6B635B]">Dog wears birthday hat; grabs plush toy to counter.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-mono">BIRTHDAY</span></td>
+              </tr>
+              <tr class="hover:bg-[#FAF7F2]/50 transition-colors">
+                <td class="p-4 text-center">
+                  <input type="checkbox" class="w-4 h-4 rounded text-[#2A5242] border-[#E6DCD1] focus:ring-[#2A5242] cursor-pointer">
+                </td>
+                <td class="p-4 font-bold text-[#C85A32]">Day 30</td>
+                <td class="p-4 font-semibold text-[#2A2521]">DeLand Doggie Derby Recap & Best-Dressed Dogs</td>
+                <td class="p-4 text-[#6B635B]">Earl Brown Park</td>
+                <td class="p-4 text-[#6B635B]">Community showcase highlighting local pet parents.</td>
+                <td class="p-4"><span class="px-2 py-0.5 rounded bg-[#FAF7F2] text-[#6B635B] font-mono">COMMUNITY</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 7: MEET SINTRA.AI (RHONDA'S AI HELPER) -->
+    <!-- ========================================== -->
+    <section id="tab-sintra" class="space-y-8 hidden">
+      
+      <!-- Hero Intro to Sintra.ai -->
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-[#FCF4E8] pointer-events-none"></div>
+        <div class="max-w-3xl relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FCF4E8] text-[#D4973B] text-xs font-bold mb-4 border border-[#D4973B]/30">
+            <span>🤖</span> Small Business AI Workforce
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold font-serif-title text-[#2A2521] mb-3">
+            Rhonda, meet Sintra.ai — your personal digital assistant for social captions, Google reviews & customer replies.
+          </h2>
+          <p class="text-sm md:text-base text-[#6B635B] leading-relaxed mb-6">
+            You spend 12 hours a day managing the store, cutting coats, talking to worried dog parents, and handling shipments. 
+            You do <strong>not</strong> have time to sit at a laptop writing 30 social media captions, researching trending hashtags, or drafting emails. 
+            <a href="https://sintra.ai/" target="_blank" class="font-bold text-[#C85A32] underline hover:text-[#A94420]">Sintra.ai</a> was built specifically for independent business owners like you: it’s an entire team of 12 AI helpers ready to do your typing in seconds.
+          </p>
+          
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="https://sintra.ai/" target="_blank" class="px-6 py-3 bg-[#D4973B] hover:bg-[#B87D28] text-white font-bold text-xs rounded-xl shadow transition-colors inline-flex items-center gap-2">
+              <span>Visit Sintra.ai Official Website</span>
+              <span>↗</span>
+            </a>
+            <button onclick="scrollToShareDrawer()" class="px-5 py-3 bg-[#FAF7F2] hover:bg-[#EFE7DA] text-[#2A2521] border border-[#E6DCD1] font-semibold text-xs rounded-xl transition-colors">
+              📤 Share with Rhonda (1-Click Text/Email)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- What Sintra Does For Gurrs & Purrs Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="w-10 h-10 rounded-xl bg-[#F7EAE4] text-[#C85A32] flex items-center justify-center font-bold text-lg mb-4">
+            📸
+          </div>
+          <h3 class="font-serif-title text-base font-bold text-[#2A2521] mb-2">Instant Social Media Manager</h3>
+          <p class="text-xs text-[#6B635B] leading-relaxed mb-3">
+            Rhonda simply types: <em>"We just finished a cage-free bath on an itchy Doodle using Thera-Clean."</em> Sintra immediately writes an engaging Instagram caption with DeLand hashtags and a call-to-action in 3 seconds.
+          </p>
+          <span class="text-[11px] font-semibold text-[#C85A32]">Saves 5+ hours every week</span>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="w-10 h-10 rounded-xl bg-[#E8F0EC] text-[#2A5242] flex items-center justify-center font-bold text-lg mb-4">
+            ⭐
+          </div>
+          <h3 class="font-serif-title text-base font-bold text-[#2A2521] mb-2">Google Review Responder</h3>
+          <p class="text-xs text-[#6B635B] leading-relaxed mb-3">
+            When a happy client leaves a 5-star review on Google Maps, Sintra drafts a warm, personalized thank-you note that mentions DeLand local pet care, boosting your Google SEO rankings effortlessly.
+          </p>
+          <span class="text-[11px] font-semibold text-[#2A5242]">Boosts Local Map Pack SEO</span>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-[#E6DCD1] card-shadow">
+          <div class="w-10 h-10 rounded-xl bg-[#FCF4E8] text-[#D4973B] flex items-center justify-center font-bold text-lg mb-4">
+            🧠
+          </div>
+          <h3 class="font-serif-title text-base font-bold text-[#2A2521] mb-2">Brain AI (Learns Gurrs & Purrs)</h3>
+          <p class="text-xs text-[#6B635B] leading-relaxed mb-3">
+            Sintra stores your store policies, 20-year history, cage-free salon rules, and pet food lines (Fromm, Carna4, Answers). It never invents false claims; it always speaks in Gurrs & Purrs' warm, caring voice.
+          </p>
+          <span class="text-[11px] font-semibold text-[#D4973B]">No Tech Skills Needed</span>
+        </div>
+
+      </div>
+
+      <!-- 1-Click Share With Rhonda Drawer -->
+      <div id="shareDrawer" class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow space-y-6">
+        <div class="border-b border-[#E6DCD1] pb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#C85A32]">One-Click Sharing Drawer</span>
+          <h3 class="text-xl font-bold font-serif-title text-[#2A2521] mt-1">Want to share Sintra.ai with Rhonda right now?</h3>
+          <p class="text-xs text-[#6B635B] mt-1">Use these pre-written messages. Simply click the copy button and paste into a text message or email to Rhonda.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          
+          <!-- SMS Card -->
+          <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-[#2A2521] flex items-center gap-1.5">
+                  <span>📱</span> Pre-Formatted Text Message (SMS)
+                </span>
+                <button onclick="copyText('smsText', this)" class="text-xs font-bold text-[#C85A32] hover:underline">
+                  Copy Text Message
+                </button>
+              </div>
+              <div id="smsText" class="p-3.5 rounded-xl bg-white border border-[#E6DCD1] text-xs text-[#2A2521] font-sans leading-relaxed">
+Hey Rhonda! 👋 Take a look at this AI helper tool called Sintra (https://sintra.ai/). It was built for busy small business owners like you. It has 12 built-in AI helpers that can write all your dog food and grooming Instagram captions, find the best hashtags, reply to Google reviews, and answer customer emails in seconds. You can teach it all about Gurrs & Purrs (Fromm, Thera-Clean, cage-free grooming) so it sounds just like you without taking up your time. Check it out when you have a minute! 🐾
+              </div>
+            </div>
+            <p class="text-[11px] text-[#6B635B]">Perfect for sending to Rhonda's iPhone so she can click and explore on her phone.</p>
+          </div>
+
+          <!-- Email Card -->
+          <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E6DCD1] flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-[#2A2521] flex items-center gap-1.5">
+                  <span>✉️</span> Pre-Formatted Email
+                </span>
+                <button onclick="copyText('emailText', this)" class="text-xs font-bold text-[#2A2521] hover:underline">
+                  Copy Email
+                </button>
+              </div>
+              <div id="emailText" class="p-3.5 rounded-xl bg-white border border-[#E6DCD1] text-xs text-[#2A2521] font-sans leading-relaxed whitespace-pre-line">
+Subject: AI Assistant for Gurrs & Purrs Social Media & Reviews (Sintra.ai)
+
+Hi Rhonda,
+
+I wanted to share a platform that can make managing Gurrs & Purrs' social media and customer messages effortless: https://sintra.ai/
+
+Instead of spending hours writing captions, finding hashtags, or replying to Google reviews, Sintra gives you 12 pre-built "AI employees" designed for small businesses.
+
+Here’s how it helps Gurrs & Purrs right away:
+1. Social Media Captions: It writes full Instagram and Facebook captions for all 10 viral video scripts in our playbook with one click.
+2. Review Management: It drafts warm, professional replies to 5-star Google Maps reviews to improve local SEO.
+3. Brain AI: You can upload your grooming menu, raw food brands (Fromm, Carna4, Answers), and store hours so it writes with complete accuracy in your authentic voice.
+
+Take a look when you have a free moment: https://sintra.ai/
+
+Let's discuss how we can set this up to save you 10+ hours a week!
+              </div>
+            </div>
+            <p class="text-[11px] text-[#6B635B]">Complete with a professional subject line and clear value points tailored for Gurrs & Purrs.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TAB 8: CLOVER + SHOPIFY STACK ARCHITECTURE -->
+    <!-- ========================================== -->
+    <section id="tab-tech" class="space-y-6 hidden">
+      <div class="border-b border-[#E6DCD1] pb-4">
+        <h2 class="text-2xl font-bold font-serif-title text-[#2A2521]">Solving Rhonda's Core Inventory & Ordering Challenge</h2>
+        <p class="text-xs text-[#6B635B] mt-1">Live Clover POS Sync + Astro Loyalty Rewards + 3 Separate Inventory Buckets (With Overstock Hidden).</p>
+      </div>
+
+      <!-- Architecture Diagram Card -->
+      <div class="bg-white rounded-3xl p-6 md:p-8 border border-[#E6DCD1] card-shadow">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          
+          <div class="p-5 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-center">
+            <span class="text-2xl mb-2 block">🏪</span>
+            <h4 class="font-bold text-sm text-[#2A2521]">Bucket 1: Location A</h4>
+            <p class="text-xs text-[#6B635B] mt-1">Downtown Boutique (116 N Woodland Blvd)</p>
+            <span class="inline-block mt-3 px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-semibold text-[11px]">Visible for Pickup & Delivery</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-[#FAF7F2] border border-[#E6DCD1] text-center">
+            <span class="text-2xl mb-2 block">🛁</span>
+            <h4 class="font-bold text-sm text-[#2A2521]">Bucket 2: Location B</h4>
+            <p class="text-xs text-[#6B635B] mt-1">South Salon (319 S Woodland Blvd)</p>
+            <span class="inline-block mt-3 px-2 py-0.5 rounded bg-[#E8F0EC] text-[#2A5242] font-semibold text-[11px]">Visible for Pickup & Delivery</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-[#FAF7F2] border border-[#C85A32]/30 text-center relative overflow-hidden">
+            <div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-[#C85A32] text-white text-[9px] font-bold">LOCKED</div>
+            <span class="text-2xl mb-2 block">📦</span>
+            <h4 class="font-bold text-sm text-[#2A2521]">Bucket 3: Overstock Buffer</h4>
+            <p class="text-xs text-[#6B635B] mt-1">Backroom / Storage Warehouse</p>
+            <span class="inline-block mt-3 px-2 py-0.5 rounded bg-[#F7EAE4] text-[#C85A32] font-semibold text-[11px]">HIDDEN from Website Customers</span>
+          </div>
+
+        </div>
+
+        <!-- The Secret Sauce: How Overstock Stays Hidden -->
+        <div class="p-5 rounded-2xl bg-[#E8F0EC] border border-[#2A5242]/20 mb-8">
+          <div class="flex items-start gap-3">
+            <span class="text-lg">💡</span>
+            <div>
+              <h4 class="font-bold text-sm text-[#2A2521]">How Overstock is Hidden from End Users on Shopify:</h4>
+              <p class="text-xs text-[#2A2521] mt-1 leading-relaxed">
+                In Shopify, go to <em>Settings &gt; Locations &gt; Overstock</em>. Simply uncheck the box labeled: 
+                <strong class="underline">"Fulfill online orders from this location."</strong> 
+                This allows Rhonda to store 50 extra bags of Fromm or Carna4 in the backroom, transfer them between Location A and B using Thrive by Shopventory, while ensuring the online customer cannot order against overstock inventory!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monthly Software Expense Comparison -->
+        <div class="border-t border-[#E6DCD1] pt-6">
+          <h4 class="font-serif-title font-bold text-base text-[#2A2521] mb-3">Cost Breakdown: Keeping Monthly Expenses Low</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-4 rounded-xl border border-[#E6DCD1] bg-[#FAF7F2]">
+              <span class="text-xs font-bold text-[#C85A32] uppercase">Recommended Modern Stack</span>
+              <ul class="mt-2 space-y-1 text-xs text-[#6B635B]">
+                <li class="flex justify-between"><span>Shopify Basic Plan:</span> <strong class="text-[#2A2521] font-mono">\$39/mo</strong></li>
+                <li class="flex justify-between"><span>Thrive (Live Clover 2-Way Sync):</span> <strong class="text-[#2A2521] font-mono">\$99/mo</strong></li>
+                <li class="flex justify-between"><span>Astro Loyalty Shopify Integration:</span> <strong class="text-[#2A2521] font-mono">\$40/mo</strong></li>
+                <li class="flex justify-between pt-2 border-t border-[#E6DCD1] font-bold text-sm text-[#2A5242]">
+                  <span>Total Monthly Cost:</span>
+                  <span class="font-mono">\$178/mo</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-4 rounded-xl border border-[#E6DCD1] bg-white text-xs text-[#6B635B] flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-bold text-[#6B635B] uppercase">Why This Beats eTailPet / Legacy ERPs</span>
+                <p class="mt-2 leading-relaxed">
+                  Legacy pet platforms charge <strong>\$350 to \$500+ per month</strong> and lock your inventory in slow, clunky proprietary databases. Our recommended stack saves Gurrs & Purrs over <strong>\$2,500 to \$3,800 every year</strong> while giving you faster page speeds, mobile checkout, and automated customer loyalty.
+                </p>
+              </div>
+              <span class="text-[11px] text-[#2A5242] font-semibold mt-2">✓ Verified Clover POS & Astro Loyalty Compatible</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Toast Notification for Copy Actions -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-[#2A2521] text-white px-5 py-3 rounded-2xl shadow-xl text-xs font-semibold flex items-center gap-2 transform translate-y-24 opacity-0 transition-all duration-300 z-50">
+    <span class="text-[#D4973B]">✓</span>
+    <span id="toastMsg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[#E6DCD1] py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-[#6B635B] space-y-2">
+      <p class="font-serif-title text-[#2A2521] font-semibold text-sm">Gurrs & Purrs · 20 Years of Devotion to DeLand's Pets (2006–2026)</p>
+      <p>116 N Woodland Blvd & 319 S Woodland Blvd, DeLand, FL 32720 · Phone: (386) 738-9997</p>
+      <p class="text-[11px] text-[#6B635B]/70">Confidential AI Consulting, Competitive SEO & Social Media Growth Dossier.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Tabs, Filtering and Copy Actions -->
+  <script>
+    function switchTab(tabId) {
+      const tabs = [
+        'tab-digest', 
+        'tab-gaps', 
+        'tab-seo', 
+        'tab-competitor-posts', 
+        'tab-playbook', 
+        'tab-calendar', 
+        'tab-sintra', 
+        'tab-tech'
+      ];
+
+      tabs.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+      });
+
+      const target = document.getElementById(tabId);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.classList.remove('bg-[#2A5242]', 'text-white');
+        btn.classList.add('bg-white', 'text-[#2A2521]', 'border-[#E6DCD1]');
+      });
+
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+        activeBtn.classList.remove('bg-white', 'text-[#2A2521]');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToShareDrawer() {
+      const drawer = document.getElementById('shareDrawer');
+      if (drawer) {
+        drawer.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function filterScripts(category) {
+      const cards = document.querySelectorAll('.script-card');
+      const buttons = document.querySelectorAll('.script-filter');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-[#2A5242]', 'text-white');
+        btn.classList.add('bg-white', 'text-[#2A2521]', 'border-[#E6DCD1]');
+      });
+
+      if (event && event.target) {
+        event.target.classList.add('bg-[#2A5242]', 'text-white');
+        event.target.classList.remove('bg-white', 'text-[#2A2521]');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function copyText(elementId, btnElement) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+
+      const text = el.innerText || el.textContent;
+      navigator.clipboard.writeText(text.trim()).then(() => {
+        showToast("Copied to clipboard!");
+        if (btnElement) {
+          const originalText = btnElement.innerText;
+          btnElement.innerText = "✓ Copied!";
+          setTimeout(() => {
+            btnElement.innerText = originalText;
+          }, 2000);
+        }
+      }).catch(err => {
+        console.error("Failed to copy", err);
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      if (toast && toastMsg) {
+        toastMsg.innerText = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 2500);
+      }
+    }
+  </script>
+</body>
+</html>
