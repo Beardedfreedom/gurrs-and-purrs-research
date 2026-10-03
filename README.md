@@ -27,6 +27,8 @@ Instead of keeping this research locked on a single local computer or buried in 
 | **[03. Master Strategy & Script Playbook](03_master_strategy_and_script_playbook.md)** | Video & Content Engine | 7 buyer personas, 10 viral video scripts, acoustic/ASMR cues, and ManyChat DM funnels. |
 | **[04. Clover & Shopify Inventory Architecture](04_clover_shopify_inventory_architecture.md)** | POS & Online Ordering | Solving the 3-bucket inventory challenge (Downtown, South, and Hidden Overstock) for \$178/mo. |
 | **[05. WordPress Studio & Subdomain Setup](05_wordpress_studio_and_subdomain_setup.md)** | Engineering & Hosting | Technical hand-off for WordPress Studio CLI, MCP AI agent integration, and CNAME routing. |
+| **[06. Grants & Funding Opportunities](06_grants_and_funding_opportunities.md)** | Non-Dilutive Capital | DeLand CRA Façade ($5,000) & Retail Grants ($5,000), Amber Grant ($10,000), and Vendor Co-Op dollars. |
+| **[07. Social Media Content Montage Playbook](07_social_media_content_montage_blueprints.md)** | Photo Repurposing | Turning 20 years of Facebook photos into 4 viral beat-synced Reels in 3 minutes without filming. |
 
 ---
 
